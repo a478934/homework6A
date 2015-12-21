@@ -12,14 +12,19 @@ public class Exam extends Component{
 	public void print() {
 		      int examSize=examList.size();     
 		      for(int i=0;i<examSize;i++){
-			      System.out.println(examList.get(i));
+		    	  System.out.print(i+"¡B");
+		    	  examList.get(i).print();
 		      }	      
 		   }   
 	public void addQuestion(Component component) {	
 		examList.add(component);
 	}
-	public void removeQuestion(int index) {	
-		examList.remove(index);
-	}	
+	public void removeQuestion(Component Component) {	
+		examList.remove(Component);
+	}
+	public Component getQuestion(int i) {				
+		return examList.get(i);
+	}
+	
 
 }
