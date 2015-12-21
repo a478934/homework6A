@@ -1,6 +1,6 @@
 package homework6A;
 
-public class Question {
+public class Question extends Component{
 	   String description;
 	   public Question(String desc) {
 	      this.description = desc;
